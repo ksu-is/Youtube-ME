@@ -118,16 +118,6 @@ class Application(Frame):
         """
         master.bind("<Return>", lambda event, btn=self.eq_bttn: self.flash(btn))
         master.bind("<BackSpace>", lambda event, btn=self.c_bttn: self.flash(btn))
-        master.bind("9", lambda event, char="9", btn=self.nine_bttn: self.add_chr(char, btn))
-        master.bind("8", lambda event, char="8", btn=self.eight_bttn: self.add_chr(char, btn))
-        master.bind("7", lambda event, char="7", btn=self.seven_bttn: self.add_chr(char, btn))
-        master.bind("6", lambda event, char="6", btn=self.six_bttn: self.add_chr(char, btn))
-        master.bind("5", lambda event, char="5", btn=self.five_bttn: self.add_chr(char, btn))
-        master.bind("4", lambda event, char="4", btn=self.four_bttn: self.add_chr(char, btn))
-        master.bind("3", lambda event, char="3", btn=self.three_bttn: self.add_chr(char, btn))
-        master.bind("2", lambda event, char="2", btn=self.two_bttn: self.add_chr(char, btn))
-        master.bind("1", lambda event, char="1", btn=self.one_bttn: self.add_chr(char, btn))
-        master.bind("0", lambda event, char="0", btn=self.zero_bttn: self.add_chr(char, btn))
         master.bind("c", lambda event, btn=self.ac_bttn: self.flash(btn), self.clear_all)
     
     def create_widgets(self):
