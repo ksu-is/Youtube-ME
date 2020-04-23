@@ -14,7 +14,7 @@ class Application(Frame):
         :param master: root.Tk()
         """
         Frame.__init__(self, master)
-        self.entry = Entry(master, width=24, font=("Arial",25))
+        self.entry = Entry(master, width=35, font=("Arial",25))
         self.entry.grid(row=0, column=0, columnspan=6, sticky="w")
         self.entry.focus_set()
         self.entry.configure(state="disabled", disabledbackground="white", disabledforeground="black")
@@ -134,38 +134,38 @@ class Application(Frame):
         self.c_bttn = Button(self, text='←', width=9, height=3, command=lambda: self.clear())
         self.c_bttn.grid(row=1, column=5 )
 
-        self.seven_bttn = Button(self, text="Hyper", width=9, height=3, command=lambda: self.add_chr(7))
+        self.seven_bttn = Button(self, text="Hyper", width=9, height=3, command=lambda: self.add_chr('https://youtu.be/e6chgRTQk6A'))
         self.seven_bttn.grid(row=1, column=0)
 
-        self.eight_bttn = Button(self, text="Confused", width=9, height=3, command=lambda: self.add_chr(8))
+        self.eight_bttn = Button(self, text="Confused", width=9, height=3, command=lambda: self.add_chr('https://youtu.be/r_w7pfulsn8'))
         self.eight_bttn.grid(row=1, column=1)
 
-        self.nine_bttn = Button(self, text="Meh", width=9, height=3, command=lambda: self.add_chr(9))
+        self.nine_bttn = Button(self, text="Meh", width=9, height=3, command=lambda: self.add_chr('https://youtu.be/t8tMTjBMPWs'))
         self.nine_bttn.grid(row=1, column=2)
 
-        self.four_bttn = Button(self, text="Sad", width=9, height=3, command=lambda: self.add_chr(4))
+        self.four_bttn = Button(self, text="Sad", width=9, height=3, command=lambda: self.add_chr('https://youtu.be/ZbZSe6N_BXs'))
         self.four_bttn.grid(row=2, column=0)
 
-        self.five_bttn = Button(self, text="Moody", width=9, height=3, command=lambda: self.add_chr(5))
+        self.five_bttn = Button(self, text="Moody", width=9, height=3, command=lambda: self.add_chr('https://youtu.be/hTWKbfoikeg'))
         self.five_bttn.grid(row=2, column=1)
 
-        self.six_bttn = Button(self, text="Angry", width=9, height=3, command=lambda: self.add_chr(6))
+        self.six_bttn = Button(self, text="Angry", width=9, height=3, command=lambda: self.add_chr('https://youtu.be/FE7TaUG3qQI'))
         self.six_bttn.grid(row=2, column=2)
 
-        self.one_bttn = Button(self, text="Good", width=9, height=3, command=lambda: self.add_chr(1))
+        self.one_bttn = Button(self, text="Good", width=9, height=3, command=lambda: self.add_chr('https://youtu.be/X7l0TVCTy-U'))
         self.one_bttn.grid(row=3, column=0)
 
-        self.two_bttn = Button(self, text="Bad", width=9, height=3, command=lambda: self.add_chr(2))
+        self.two_bttn = Button(self, text="Bad", width=9, height=3, command=lambda: self.add_chr('https://youtu.be/SB-qEYVdvXA'))
         self.two_bttn.grid(row=3, column=1)
 
-        self.three_bttn = Button(self, text="Happy", width=9, height=3, command=lambda: self.add_chr(3))
+        self.three_bttn = Button(self, text="Happy", width=9, height=3, command=lambda: self.add_chr('https://youtu.be/wl4m1Rqmq-Y'))
         self.three_bttn.grid(row=3, column=2)
 
-        self.zero_bttn = Button(self, text="Wanting", width=9, height=3, command=lambda: self.add_chr(0))
+        self.zero_bttn = Button(self, text="Wanting", width=9, height=3, command=lambda: self.add_chr('https://youtu.be/Y6bbMQXQ180'))
         self.zero_bttn.grid(row=4, column=0)
 
 root = Tk()
 root.geometry()
-root.title("Type URL into browser and enjoy")
+root.title("Copy URL into browser and enjoy")
 app = Application(root)
 root.mainloop()
